@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/trail-updates/static/css/main.57b0a750.chunk.css",
+    "main.js": "/trail-updates/static/js/main.e76b0653.chunk.js",
+    "main.js.map": "/trail-updates/static/js/main.e76b0653.chunk.js.map",
+    "runtime-main.js": "/trail-updates/static/js/runtime-main.3067b27b.js",
+    "runtime-main.js.map": "/trail-updates/static/js/runtime-main.3067b27b.js.map",
+    "static/js/2.b4b74f8e.chunk.js": "/trail-updates/static/js/2.b4b74f8e.chunk.js",
+    "static/js/2.b4b74f8e.chunk.js.map": "/trail-updates/static/js/2.b4b74f8e.chunk.js.map",
+    "static/js/3.c05b69d0.chunk.js": "/trail-updates/static/js/3.c05b69d0.chunk.js",
+    "static/js/3.c05b69d0.chunk.js.map": "/trail-updates/static/js/3.c05b69d0.chunk.js.map",
+    "index.html": "/trail-updates/index.html",
+    "static/css/main.57b0a750.chunk.css.map": "/trail-updates/static/css/main.57b0a750.chunk.css.map",
+    "static/js/2.b4b74f8e.chunk.js.LICENSE.txt": "/trail-updates/static/js/2.b4b74f8e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3067b27b.js",
+    "static/js/2.b4b74f8e.chunk.js",
+    "static/css/main.57b0a750.chunk.css",
+    "static/js/main.e76b0653.chunk.js"
+  ]
+}
