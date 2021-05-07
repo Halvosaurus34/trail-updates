@@ -3,6 +3,7 @@ import Form from "./components/Form";
 function App() {
   return (
     <div className="App">
+      <h1>Park Alerts</h1>
       <Form />
     </div>
   );

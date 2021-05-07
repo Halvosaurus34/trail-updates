@@ -4,11 +4,13 @@ function AlertCard(props) {
   console.log(props, "yo");
   return (
     <div className="alertCard">
-      <p>{props.title}</p>
+      <h3>{props.title}</h3>
       <p>Description: {props.desc}</p>
       {props.url ? (
         <p>
-          URL: <a href={props.url}>{props.url}</a>
+          <a href={props.url} target="blank">
+            {props.url}
+          </a>
         </p>
       ) : (
         ""

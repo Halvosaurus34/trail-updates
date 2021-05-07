@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import AlertCard from "./AlertCard";
-
-const Form = (props) => {
+import "./Form.css";
+const Form = () => {
   const [endpoint, setEndpoint] = useState("alerts");
-  const [parkCode, setParkCode] = useState("");
+  const [parkCode, setParkCode] = useState("acad");
   const [alertData, setAlertData] = useState("");
+  const [parkName, setParkName] = useState("");
   const handleEndpointChange = (event) => {
     setEndpoint(event.target.value);
   };
@@ -13,11 +14,24 @@ const Form = (props) => {
     setParkCode(event.target.value);
   };
 
-  const request = (event) => {
+  const requestName = (event) => {
     event.preventDefault();
     axios
       .get(
-        "https://developer.nps.gov/api/v1/alerts/?parkCode=acad,dena&api_key=dtVNDWFBwVoKGYcsGmzzHprM10HDhBT2vyjgCZ0F"
+        `https://developer.nps.gov/api/v1/parks/?parkCode=${parkCode}&api_key=dtVNDWFBwVoKGYcsGmzzHprM10HDhBT2vyjgCZ0F`
+      )
+      .then(function (response) {
+        // handle success
+        setParkName(response.data.data[0].fullName);
+        requestData();
+        // setParkName(response.data.data);
+      });
+  };
+
+  const requestData = (event) => {
+    axios
+      .get(
+        `https://developer.nps.gov/api/v1/${endpoint}/?parkCode=${parkCode}&api_key=dtVNDWFBwVoKGYcsGmzzHprM10HDhBT2vyjgCZ0F`
       )
       .then(function (response) {
         // handle success
@@ -26,20 +40,15 @@ const Form = (props) => {
   };
 
   return (
-    <div>
-      <form onSubmit={request}>
-        <label>
-          Endpoint:
-          <select value={endpoint} onChange={handleEndpointChange}>
-            <option value="alerts">Alerts</option>
-          </select>
-        </label>
+    <div className="park-form">
+      <form onSubmit={requestName}>
         <label>
           Park Code:
           <input type="text" value={parkCode} onChange={handleParamsChange} />
         </label>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" className="submit-button" />
       </form>
+      {parkName ? <h2>{parkName}</h2> : ""}
       {alertData
         ? alertData.map((el) => (
             <AlertCard
