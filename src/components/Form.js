@@ -3,13 +3,10 @@ import axios from "axios";
 import AlertCard from "./AlertCard";
 import "./Form.css";
 const Form = () => {
-  const [endpoint, setEndpoint] = useState("alerts");
+  const endpoint = "alerts";
   const [parkCode, setParkCode] = useState("acad");
   const [alertData, setAlertData] = useState("");
   const [parkName, setParkName] = useState("");
-  const handleEndpointChange = (event) => {
-    setEndpoint(event.target.value);
-  };
   const handleParamsChange = (event) => {
     setParkCode(event.target.value);
   };
