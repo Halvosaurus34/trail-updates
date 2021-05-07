@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/trail-updates/static/css/main.57b0a750.chunk.css",
-    "main.js": "/trail-updates/static/js/main.ebda9a6a.chunk.js",
-    "main.js.map": "/trail-updates/static/js/main.ebda9a6a.chunk.js.map",
+    "main.js": "/trail-updates/static/js/main.e76b0653.chunk.js",
+    "main.js.map": "/trail-updates/static/js/main.e76b0653.chunk.js.map",
     "runtime-main.js": "/trail-updates/static/js/runtime-main.3067b27b.js",
     "runtime-main.js.map": "/trail-updates/static/js/runtime-main.3067b27b.js.map",
     "static/js/2.b4b74f8e.chunk.js": "/trail-updates/static/js/2.b4b74f8e.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3067b27b.js",
     "static/js/2.b4b74f8e.chunk.js",
     "static/css/main.57b0a750.chunk.css",
-    "static/js/main.ebda9a6a.chunk.js"
+    "static/js/main.e76b0653.chunk.js"
   ]
 }
