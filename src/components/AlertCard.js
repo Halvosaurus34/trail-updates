@@ -4,7 +4,7 @@ function AlertCard(props) {
   return (
     <div className="alertCard">
       <h3>{props.title}</h3>
-      <p>Description: {props.desc}</p>
+      <p>{props.desc}</p>
       {props.url ? (
         <a href={props.url} target="blank">
           READ MORE
