@@ -8,6 +8,7 @@ form {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 2rem;
   color: #333;
 }
@@ -35,6 +36,7 @@ form input {
   display: inline-block;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 860px) {

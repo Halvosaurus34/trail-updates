@@ -7,11 +7,9 @@ function AlertCard(props) {
       <h3>{props.title}</h3>
       <p>Description: {props.desc}</p>
       {props.url ? (
-        <p>
-          <a href={props.url} target="blank">
-            {props.url}
-          </a>
-        </p>
+        <a href={props.url} target="blank">
+          READ MORE
+        </a>
       ) : (
         ""
       )}

@@ -10,6 +10,21 @@
   padding: 10px 20px;
   word-wrap: break-word;
 }
+
+.alertCard a {
+  background-color: #fec51b; /* Green */
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 1185px) {
   .alertCard {
     width: 70%;
