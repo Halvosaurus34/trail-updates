@@ -45,7 +45,7 @@ const Form = () => {
         </label>
         <input type="submit" value="Submit" className="submit-button" />
       </form>
-      {parkName ? <h2>{parkName}</h2> : ""}
+      {parkName ? <h2 className="park-name">{parkName}</h2> : ""}
       {alertData
         ? alertData.map((el) => (
             <AlertCard

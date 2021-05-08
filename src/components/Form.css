@@ -11,6 +11,19 @@ form {
   margin-top: 2rem;
   color: #333;
 }
+
+.park-name {
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  padding-left: 0.3rem;
+  border-left: 6px solid #fec51b;
+  font-family: "Open Sans", sans-serif;
+}
+
+form input {
+  margin-left: 0.3rem;
+}
 .submit-button {
   background-color: #fec51b; /* Green */
   border: none;
