@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 1185px) {
   .alertCard {
-    width: 70%;
-    margin: 1rem 1rem;
+    width: 80%;
+    margin: 1rem 0.2rem;
   }
 }

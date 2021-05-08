@@ -7,6 +7,7 @@ const Form = () => {
   const [parkCode, setParkCode] = useState("acad");
   const [alertData, setAlertData] = useState("");
   const [parkName, setParkName] = useState("");
+  const [submitClicked, setSubmitClicked] = useState(false);
   const handleParamsChange = (event) => {
     setParkCode(event.target.value);
   };
@@ -19,9 +20,14 @@ const Form = () => {
       )
       .then(function (response) {
         // handle success
+        setSubmitClicked(true);
         setParkName(response.data.data[0].fullName);
         requestData();
         // setParkName(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+        alert(`${parkCode} doesn't seem to be a valid park code!`);
       });
   };
 
@@ -33,6 +39,9 @@ const Form = () => {
       .then(function (response) {
         // handle success
         setAlertData(response.data.data);
+      })
+      .catch(function (error) {
+        console.log(error);
       });
   };
 
@@ -45,10 +54,15 @@ const Form = () => {
         </label>
         <input type="submit" value="Submit" className="submit-button" />
       </form>
-      {parkName ? <h2 className="park-name">{parkName}</h2> : ""}
+      {parkName && alertData.length > 0 ? (
+        <h2 className="park-name">{parkName}</h2>
+      ) : (
+        ""
+      )}
       {alertData
         ? alertData.map((el) => (
             <AlertCard
+              key={el.id}
               id={el.id}
               title={el.title}
               desc={el.description}
@@ -56,6 +70,11 @@ const Form = () => {
             />
           ))
         : ""}
+      {submitClicked && alertData.length === 0 ? (
+        <h2 className="park-name">No alerts for {parkName}!</h2>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

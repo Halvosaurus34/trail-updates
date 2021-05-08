@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/trail-updates/static/css/main.f8fa5152.chunk.css",
-    "main.js": "/trail-updates/static/js/main.162e158d.chunk.js",
-    "main.js.map": "/trail-updates/static/js/main.162e158d.chunk.js.map",
+    "main.css": "/trail-updates/static/css/main.ae0aeb99.chunk.css",
+    "main.js": "/trail-updates/static/js/main.cc40f434.chunk.js",
+    "main.js.map": "/trail-updates/static/js/main.cc40f434.chunk.js.map",
     "runtime-main.js": "/trail-updates/static/js/runtime-main.3067b27b.js",
     "runtime-main.js.map": "/trail-updates/static/js/runtime-main.3067b27b.js.map",
     "static/js/2.b4b74f8e.chunk.js": "/trail-updates/static/js/2.b4b74f8e.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.c05b69d0.chunk.js": "/trail-updates/static/js/3.c05b69d0.chunk.js",
     "static/js/3.c05b69d0.chunk.js.map": "/trail-updates/static/js/3.c05b69d0.chunk.js.map",
     "index.html": "/trail-updates/index.html",
-    "static/css/main.f8fa5152.chunk.css.map": "/trail-updates/static/css/main.f8fa5152.chunk.css.map",
+    "static/css/main.ae0aeb99.chunk.css.map": "/trail-updates/static/css/main.ae0aeb99.chunk.css.map",
     "static/js/2.b4b74f8e.chunk.js.LICENSE.txt": "/trail-updates/static/js/2.b4b74f8e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3067b27b.js",
     "static/js/2.b4b74f8e.chunk.js",
-    "static/css/main.f8fa5152.chunk.css",
-    "static/js/main.162e158d.chunk.js"
+    "static/css/main.ae0aeb99.chunk.css",
+    "static/js/main.cc40f434.chunk.js"
   ]
 }

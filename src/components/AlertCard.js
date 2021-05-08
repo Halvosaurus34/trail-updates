@@ -1,7 +1,6 @@
 import React from "react";
 import "./AlertCard.css";
 function AlertCard(props) {
-  console.log(props, "yo");
   return (
     <div className="alertCard">
       <h3>{props.title}</h3>
